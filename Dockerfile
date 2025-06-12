@@ -36,7 +36,7 @@ RUN cargo build --release --features release ${EXTRA_FEATURES}
 
 
 
-FROM debian:bookworm-slim
+FROM debian:12.11-slim
 
 # Placing config and binary executable in different directories
 ARG CONFIG_DIR=/local/config
